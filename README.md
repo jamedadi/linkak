@@ -16,24 +16,26 @@ than the original one.
 
 ## The goal of this project:
 
-The main purpose of this project is being an acceptable resume and also a good practice of Django framework
+The main purpose of this project is being an acceptable resume and also a good practice of Django framework.
+
+---
 
 ## What are our project options that make it special?
-- The short URL can has a password
-- The short URL has the number of visit
-- The short URL has a custom expire time
+- The short URL can has a password.
+- The short URL has the number of visit.
+- The short URL has a custom expire time.
 
 ---
 
 ## Requirements:
 - [ ] we should have a users.
-- [ ] we should save host, host status(can be allow and deny)
-- [ ] we should save creator, URL, URL password, URL expire time and URL visits
-- [ ] and slug for give to user
-- [ ] Our visit model should have an IP and visitable model
+- [ ] we should save host, host status(can be allow and deny).
+- [ ] we should save creator, URL, URL password, URL expire time and URL visits.
+- [ ] and slug for give to user.
+- [ ] Our visit model should have an IP and visitable model.
 
 ---
 
 ## Architecture of the project:
 The project is based on the MVT architecture of the Django framework, so we will
-use SSR(server side rendering)
+use SSR(server side rendering).
