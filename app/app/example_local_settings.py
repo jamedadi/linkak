@@ -1,4 +1,7 @@
+from django.core.management.utils import get_random_secret_key
+
 # django secret_key
+# you can use get_random_secret_key() for gen secret key
 SECRET_KEY = ''
 
 # setting options
