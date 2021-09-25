@@ -12,6 +12,5 @@ class DomainAdmin(admin.ModelAdmin):
 
 @admin.register(Link)
 class LinkAdmin(admin.ModelAdmin):
-    # TODO-2: add owner to list display
-    list_display = ('domain', 'slug', 'url', 'visitor_limit', 'expire_time')
+    list_display = ('user', 'domain', 'slug', 'url', 'visitor_limit', 'expire_time')
     search_fields = ('domain', 'slug', 'url', 'visitor_limit')

@@ -1,8 +1,11 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 from django.utils.crypto import get_random_string
 from django.utils.translation import ugettext_lazy as _
 
 from library.models import BaseModel
+
+User = get_user_model()
 
 
 class Domain(BaseModel):
@@ -26,7 +29,7 @@ class Domain(BaseModel):
 
 
 class Link(BaseModel):
-    # TODO-1: create owner and foreign key to user
+    user = models.ForeignKey(User, related_name='links', on_delete=models.CASCADE, verbose_name=_('user'))
     domain = models.ForeignKey(Domain, related_name='links', on_delete=models.CASCADE, verbose_name=_('link'))
     slug = models.CharField(max_length=6, verbose_name=_('slug'))
     url = models.TextField(verbose_name=_('url'))
