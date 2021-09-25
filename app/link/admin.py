@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from app.link.models import Domain, Link
+from link.models import Domain, Link
 
 
 @admin.register(Domain)

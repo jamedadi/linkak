@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.crypto import get_random_string
 from django.utils.translation import ugettext_lazy as _
 
-from app.library.models import BaseModel
+from library.models import BaseModel
 
 
 class Domain(BaseModel):
