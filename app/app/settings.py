@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Local Apps
-
+    'link.apps.LinkConfig'
     # Third party apps
 
 ] + THIRD_APPS_DEBUG_MODE if DEBUG else None
